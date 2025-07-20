@@ -20,12 +20,12 @@
             <div class="w-full h-[150px] grid grid-cols-2 py-5 border-b max-lg:px-5 max-md:grid-cols-1 max-lg:h-auto max-lg:border-0 max-lg:gap-5">
                 <div class="flex justify-start items-start flex-col gap-4">
                     <h1 class="text-4xl font-bold">Ruang {{$ruang->name_room}}</h1>
-                    <h1 class="text-xl">{{$formattedFacilities}}</h1>
+                    <h1 class="text-xl">Size : {{$ruang->size}} M<sup>2</sup> </h1>
                 </div>
                 <div class="w-full border hidden max-md:block"></div>
                 <div class="flex justify-start items-end flex-col gap-4 max-lg:items-start">
-                    <h1 class="text-xl text-slate-600">Tertarik menggunakan Ruangan ini?</h1>
-                    <a class="px-16 text-xl font-bold py-3 bg-[#017B48] text-white rounded-md hover:bg-[#017b48de] flex justify-center items-center gap-4" target="_blank" href="{{$ruang->contact}}">
+                    <h1 class="text-xl text-slate-600">Tertarik dengan Ruangan ini?</h1>
+                    <a class="px-16 text-xl font-bold py-3 bg-[#017B48] text-white rounded-md hover:bg-[#017b48de] flex justify-center items-center gap-4" target="_blank" href="{{$ruang->contact}}?text=Saya tertarik dengan ruangan {{$ruang->name_room}}. Bisakah saya mendapatkan informasi lebih lanjut?">
                         Hubungi Kami
                         <img class="h-6" src="{{url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png')}}" alt="">
                     </a>
